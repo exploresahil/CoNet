@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #1d1d1f;
+  background-color: #fafafc;
+}
+
+button {
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+img {
+  height: auto;
+  vertical-align: middle;
+  font-style: italic;
+  background-repeat: no-repeat;
+  background-size: cover;
+  shape-margin: 1rem;
+}
+
+input,
+textarea,
+button,
+select {
+  font: inherit;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+header {
+  width: 100vw;
+  height: 100px;
+  padding: 0 6vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+header .logo {
+  display: flex;
+  align-items: center;
+}
+header .logo h2 span {
+  color: #0043c1;
+}
+header nav {
+  display: flex;
+  gap: 80px;
+}
+header nav a {
+  transition: color 100ms ease-in-out;
+}
+header nav a:hover {
+  color: #0043c1;
+  transition: color 200ms ease-in-out;
+}
+header .buttons {
+  display: flex;
+  gap: 40px;
+}
+header .buttons-sign-in {
+  transition: color 100ms ease-in-out;
+}
+header .buttons-sign-in:hover {
+  color: #0043c1;
+  transition: color 200ms ease-in-out;
+}
+header .buttons-register {
+  border: 1px solid #1d1d1f;
+  padding: 5px 10px;
+  border-radius: 10px;
+  transition: all 100ms ease-in-out;
+}
+header .buttons-register:hover {
+  background-color: #0043c1;
+  border: 1px solid #0043c1;
+  color: #fafafc;
+  transition: all 200ms ease-in-out;
+}
+header .bg {
+  position: absolute;
+  right: 20%;
+  display: flex;
+  z-index: -1;
+}
+header .bg-d-green {
+  width: 100px;
+  height: 100px;
+  background-color: #00a796;
+  border-radius: 0 0 0 100px;
+}
+header .bg-l-green {
+  width: 80px;
+  height: 20px;
+  background-color: #c9f1d5;
+}
+
+main {
+  width: 100vw;
+  height: calc(100vh - 100px);
+  padding: 100px 0 0 12vw;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+main .left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 30vw;
+}
+main .left-sub-heading {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+main .left-heading {
+  text-transform: capitalize;
+  font-size: 3.5rem;
+}
+main .left .info-container {
+  display: flex;
+  justify-content: space-between;
+}
+main .left .info-container .info {
+  max-width: 200px;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+main .left .buttons-container {
+  display: flex;
+  gap: 80px;
+  margin-top: 20px;
+}
+main .left .buttons-container button {
+  font-weight: 600;
+  font-size: 1rem;
+  background-color: #0043c1;
+  padding: 15px 30px;
+  border-radius: 10px;
+}
+main .left .buttons-container button:nth-of-type(1) {
+  color: #fafafc;
+  transition: background-color 100ms ease-in-out;
+}
+main .left .buttons-container button:nth-of-type(1):hover {
+  background-color: #1d1d1f;
+  transition: background-color 200ms ease-in-out;
+}
+main .left .buttons-container button:nth-of-type(2) {
+  background: none;
+  border: 1px solid #1d1d1f;
+  transition: all 100ms ease-in-out;
+}
+main .left .buttons-container button:nth-of-type(2):hover {
+  color: #fafafc;
+  background-color: #1d1d1f;
+  transition: all 200ms ease-in-out;
+}
+main .right {
+  width: 650px;
+  height: 500px;
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr 3fr 1fr 3fr;
+  grid-template-rows: 3fr 3fr 3fr 3fr 1fr;
+}
+main .right .one {
+  grid-column: 1;
+  grid-row: 1;
+  background-color: #efcd51;
+  width: 100%;
+  height: 100%;
+}
+main .right .one .orange {
+  background-color: #f58f51;
+  width: 100%;
+  height: 100%;
+  border-radius: 100% 0 0 0;
+}
+main .right .two {
+  grid-column: 2;
+  grid-row: 1;
+  background-color: #00a796;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  display: grid;
+  place-content: center;
+}
+main .right .two .white {
+  background-color: #fafafc;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+main .right .three {
+  grid-column: 3;
+  grid-row: 1;
+  background-color: #c9f1d5;
+  width: 100%;
+  height: 100%;
+  border-radius: 0 0 100% 0;
+}
+main .right .four {
+  grid-column: 1;
+  grid-row: 2;
+  background-color: #0043c1;
+  width: 100%;
+  height: 100%;
+  border-radius: 0 0 100% 0;
+}
+main .right .img-container {
+  grid-column: 2/5;
+  grid-row: 2/5;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  border-radius: 0 50% 0 50%;
+}
+main .right .img-container img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+main .right .five {
+  grid-column: 1;
+  grid-row: 3;
+}
+main .right .five .green {
+  width: 100%;
+  height: 50%;
+  background-color: #00a796;
+  border-radius: 0 0 100px 100px;
+}
+main .right .five .orange {
+  background-color: #f58f51;
+  width: 100%;
+  height: 50%;
+  border-radius: 100px 100px 0 0;
+  display: grid;
+  place-content: center;
+}
+main .right .five .orange .white {
+  width: 70px;
+  height: 35px;
+  background-color: #fafafc;
+  border-radius: 500px 500px 0 0;
+}
+main .right .six {
+  grid-column: 5;
+  grid-row: 4;
+  background-color: #fbd5be;
+  border-radius: 0 100px 0 0;
+}
+main .right .seven {
+  grid-column: 6;
+  grid-row: 5;
+  background-color: #efcd51;
+}
+main .bottom-bg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  gap: 200px;
+  padding: 0 0 0 10vw;
+}
+main .bottom-bg .bg {
+  display: flex;
+}
+main .bottom-bg .bg .d-green {
+  background-color: #00a796;
+}
+main .bottom-bg .bg .l-green {
+  background-color: #c9f1d5;
+}
+main .bottom-bg .bg .yellow {
+  background-color: #efcd51;
+}
+main .bottom-bg .bg .orange {
+  background-color: #f58f51;
+}
+main .bottom-bg .bg .one {
+  width: 50px;
+  height: 10px;
+  align-self: flex-end;
+}
+main .bottom-bg .bg .two {
+  width: 100px;
+  height: 50px;
+  border-radius: 0 50px 0 0;
+}
